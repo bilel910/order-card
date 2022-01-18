@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+
+:root
+{
+    --bg-color:rgba(224,232,255,255);
+    --bg-white:#ffffff;
+    --second-color:#382ae1;
+}
+
+
+body
+{
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+}
+
+
+.order-container
+{
+    background-color: var(--bg-white);
+    height: 40rem;
+    width: 27rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.container
+{
+    width: 23rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.image
+{
+    background-image: url(images/illustration-hero.svg);
+    width: 100%;
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem 2rem 0 0;
+}
+
+/*** description and title ***/
+
+.desc
+{
+    margin-top: 3rem;
+    text-align: center;
+}
+.title
+{
+    font-size: 32px;
+    color: #202c45;
+}
+
+.desc p
+{
+    font-size: 17px;
+    color: grey;
+}
+
+/*** pricing plan ***/
+
+.plan
+{
+    background-color: rgba(224,232,255,.3);
+    border-radius: 1rem;
+    height: 7rem;
+    position: relative;
+}
+
+.favicon
+{
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-image: url(images/icon-music.svg);
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.plan-title
+{
+    font-size: 18px;
+    margin-left: 5rem;
+}
+
+.price
+{
+    margin-left: 5rem;
+    margin-top: -.5rem;
+    color: grey;
+}
+
+.second-desc
+{
+    display: inline;
+    float: left;
+    width: 12rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+.change
+{
+    display: inline;
+    float: right;
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+    color: var(--second-color);
+    border-bottom: 1px solid var(--second-color);
+}
+
+.buttons
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 8rem;
+    margin: 1rem auto;
+}
+
+.payment-btn
+{
+    border: none;
+    background-color: var(--second-color);
+    border-radius: 0.6rem;
+    width: 23rem;
+    height: 3rem;
+    cursor: pointer;
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.order-btn
+{
+    border: none;
+    background-color: transparent;
+    border-radius: 0.6rem;
+    width: 23rem;
+    height: 3rem;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+    color: grey;
+}
+
+
+@media (max-width: 400px) {
+    body {
+      transform: scale(0.8);
+      top: 10vh;
+    }
+  }
+
+/** hover state **/
+
+.change:hover
+{
+    border:none;
+    color: #b0afb1;
+    cursor: pointer;
+}
+
+.payment-btn:hover
+{
+    background-color: #766cf1;
+}
+
+.order-btn:hover
+{
+    color: #222c4a;
+}
